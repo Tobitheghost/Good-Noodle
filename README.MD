@@ -65,7 +65,7 @@ This is the bones of a project to create a "Good Noodles" chart online in the fa
 
 ## Getting Started
 #### Adding Stars.
-In the `website\main\main.y` There is a dictionary that you can add entries to and they will be imported and injected into the app.
+In the `website\main\main.py` There is a dictionary that you can add entries to and they will be imported and injected into the app.
 
 #### Tips.
 the `app.py` is for debug mode, and the `wsgi.py` is meant for production.  

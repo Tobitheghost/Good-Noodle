@@ -1,0 +1,38 @@
+{% extends "layout/base.html"%}
+{% block title %}A_SourKat{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='main/css/main.css')}}">
+{% endblock %}
+
+{% block content %}
+    <section class="chart">
+        <h1>Good Noodles</h1>
+        {% for person in stars %}
+        <article>
+            <div class="name_section">
+                <h3>{{person["name"]}}</h3>
+            </div>
+            <div class="star_section">
+                {% for star in person["stars"]%}
+                <div class="img_desc">
+                    <img class="star" src="{{star['star']}}" onclick="viewStar()">
+                    <div class="desc_section">
+                        <h4>{{star["title"]}}</h4>
+                        <p>{{star["desc"]}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </article>
+        {% endfor %}
+    </section>
+    <script>
+        function viewStar() {
+            if (event.srcElement.nextElementSibling.style.display == "block") {
+                event.srcElement.nextElementSibling.style.display = "none"
+            } else {
+                event.srcElement.nextElementSibling.style.display = "block"
+            }
+        }
+    </script>
+{% endblock %}

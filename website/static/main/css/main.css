@@ -1,0 +1,52 @@
+.chart {
+    width: 600px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    border: white solid 5px;
+
+    h1 {
+        color: white;
+        padding: 10px;
+    }
+}
+
+article {
+    border-top: white solid 5px;
+    display: flex;
+}
+
+.name_section {
+    color: white;
+    border-right: white solid 5px;
+    min-width: 12ch;
+    padding: 10px;
+}
+
+.star_section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img_desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.desc_section {
+    display: none;
+    position:relative;
+    left: 10px;
+    margin: 5px 0 5px 0;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    background-color: #6eaf89;
+}
+
+.star {
+    height: 25px;
+    width: 25px;
+}
